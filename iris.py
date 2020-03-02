@@ -36,3 +36,7 @@ print("X_new.shape:", X_new.shape)
 prediction = knn.predict(X_new)
 print("Prediction:", prediction)
 print("Prediction target name:", iris_dataset['target_names'][prediction])
+
+y_predict = knn.predict(X_test)
+print("Prediction:", y_predict)
+print("Test score: {:.2f}".format(knn.score(X_test, y_test)))
